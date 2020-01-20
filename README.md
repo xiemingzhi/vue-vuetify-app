@@ -2,6 +2,8 @@
 
 ## Project setup
 ```
+vue add vuetify
+#? Choose a preset: Default (recommended)
 npm install
 ```
 
