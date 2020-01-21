@@ -4,7 +4,10 @@
 ```
 vue add vuetify
 #? Choose a preset: Default (recommended)
-vue add vue-router
+vue add router
+#? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+vue add axios 
+#edit plugins/axios.js remove options
 npm install
 ```
 
