@@ -4,6 +4,7 @@
 ```
 vue add vuetify
 #? Choose a preset: Default (recommended)
+vue add vue-router
 npm install
 ```
 
