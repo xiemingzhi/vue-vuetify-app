@@ -1,13 +1,23 @@
 <template>
-<div>
-    <md-field>
-      <label>Initial Value</label>
-      <md-input :value="name" ref="newTodoItem" @input="updateTodoName" placeholder="Todo Name"></md-input>
-    </md-field>
-    <md-button class="md-fab md-primary" @click="addTodo">
-      <md-icon>check</md-icon>
-    </md-button>
-</div>    
+<v-card>
+  <v-form>
+      <v-text-field
+        label="Regular"
+        :value="name" ref="newTodoItem" @input="updateTodoName"
+      ></v-text-field>
+  </v-form>
+  <v-btn
+      absolute
+      dark
+      fab
+      bottom
+      right
+      color="pink"
+      @click="addTodo"
+    >
+    <v-icon>mdi-check</v-icon>
+  </v-btn>
+</v-card>
 </template>
 
 <script>

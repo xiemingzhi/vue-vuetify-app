@@ -1,18 +1,5 @@
 <template>
-  <!-- <div class="md-layout">
-    <div class="md-layout-item">
-    <md-list>
-      <md-list-item v-for="todo in todos" :key="todo.id">
-        <span class="md-list-item-text">{{todo.title}}</span>
-      </md-list-item>
-    </md-list>
-    </div>  
-    <div class="md-layout-item">
-    <md-button class="md-fab md-fab-bottom-right md-primary" @click="addTodo">
-      <md-icon>add</md-icon>
-    </md-button>
-    </div>
-  </div> -->
+  
   <v-card>
     <v-list>
       <v-list-item v-for="todo in todos" :key="todo.id">
@@ -21,6 +8,17 @@
         </v-list-item-content>
       </v-list-item>
     </v-list>
+    <v-btn
+      absolute
+      dark
+      fab
+      bottom
+      right
+      color="pink"
+      @click="addTodo"
+    >
+      <v-icon>mdi-plus</v-icon>
+    </v-btn>
   </v-card>
 </template>
 
